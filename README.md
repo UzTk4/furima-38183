@@ -19,7 +19,7 @@
 
 - has_many :items
 - has_many :comments
-- has_one :order
+- has_many :orders
 
 
 
@@ -30,15 +30,13 @@
 | ----------------- | -----------| ------------------------------ |
 | name              | string     | null: false                    |
 | description       | text       | null: false                    |
-| category          | string     | null: false, foreign_key: true |
-| status            | string     | null: false, foreign_key: true |
-| cost              | integer    | null: false, foreign_key: true |
-| area              | string     | null: false, foreign_key: true |
-| days              | string     | null: false, foreign_key: true |
+| category_id       | integer    | null: false                    |
+| status_id         | integer    | null: false                    |
+| cost_id           | integer    | null: false                    |
+| area_id           | integer    | null: false                    |
+| days_id           | integer    | null: false                    |
 | price             | integer    | null: false                    |
-| commission        | integer    | null: false                    |
-| profit            | integer    | null: false                    |
-| user              | references | null: false, foreign_key: true |
+| user_id           | references | null: false, foreign_key: true |
 
 
 ### Association
@@ -52,35 +50,44 @@
 
 ## ordersテーブル
 
-| Column                | Type       | Options                        |
-| --------------------- | ---------- | ------------------------------ |
-| card                  | integer    | null: false                    |
-| expiration            | integer    | null: false, unique: true      |
-| security_cord         | integer    | null: false                    |
-| post_code             | integer    | null: false                    |
-| prefecture            | string     | null: false                    |
-| city                  | string     | null: false                    |
-| address               | string     | null: false                    |
-| building              | string     | null: false                    |
-| user                  | references | null: false, foreign_key: true |
-| item                  | references | null: false, foreign_key: true |
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| user_id            | references | null: false, foreign_key: true |
+| item_id            | references | null: false, foreign_key: true |
 
 
 ### Association
 
 - belongs_to :user
 - belongs_to :item
+- has_one :destination
 
 
+
+
+## destination
+
+| Column                | Type       | Options                        |
+| --------------------- | ---------- | ------------------------------ |
+| post_code             | integer    | null: false                    |
+| prefecture            | string     | null: false                    |
+| city                  | string     | null: false                    |
+| address               | string     | null: false                    |
+| building              | string     | null: false                    |
+
+
+### Association
+
+- belongs_to :order
 
 
 ## commentsテーブル
 
-| Column    | Type          | Options                          |
-| --------- | ------------- | -------------------------------- |
-| content   | string        |                                  |
-| user      | references    | null: false, foreign_key: true   |
-| item      | references    | null: false, foreign_key: true   |
+| Column       | Type          | Options                          |
+| ------------ | ------------- | -------------------------------- |
+| content      | string        |                                  |
+| user_id      | references    | null: false, foreign_key: true   |
+| item_id      | references    | null: false, foreign_key: true   |
 
 
 ### Association
