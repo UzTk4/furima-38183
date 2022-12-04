@@ -65,7 +65,7 @@
 
 
 
-## destination
+## destinations
 
 | Column                | Type       | Options                        |
 | --------------------- | ---------- | ------------------------------ |
