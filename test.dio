@@ -55,13 +55,13 @@
                 <mxCell id="23" value="発送元の地域　　　/　　prefecture_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="16" vertex="1">
                     <mxGeometry y="180" width="240" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" value="発送までの日数　　/　　days_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="16" vertex="1">
+                <mxCell id="25" value="発送までの日数　　/　　suhedled_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="16" vertex="1">
                     <mxGeometry y="210" width="240" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="26" value="価格　　　　　　　/　　price" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="16" vertex="1">
                     <mxGeometry y="240" width="240" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="user　　    　　　   /　　user_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="16" vertex="1">
+                <mxCell id="29" value="user　　    　　　   /　　user" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="16" vertex="1">
                     <mxGeometry y="270" width="240" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="31" value="destinationsテーブル" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
