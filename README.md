@@ -74,6 +74,7 @@
 | city                  | string     | null: false                    |
 | address               | string     | null: false                    |
 | building              | string     | null: false                    |
+| phone_number          | string     | null: false                    |
 
 
 ### Association
